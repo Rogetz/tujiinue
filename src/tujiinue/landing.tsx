@@ -41,7 +41,6 @@ const App = () => {
   }
 
   return (
-    //<NotificationProvider>
       <div className={`select-none min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'}`}>
         {/* Navigation */}
         <nav className="fixed w-full z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm">
@@ -316,13 +315,13 @@ const App = () => {
 
         {/* Contact Section */}
         <SectionWrapper id="contact" title="Get In Touch" subtitle="We'd love to hear from you">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-12 text-black dark:text-white">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="space-y-6"
+              className="space-y-6 text-black dark:text-white"
             >
               <h3 className="text-2xl font-bold">Contact Information</h3>
               <div className="space-y-4">
@@ -442,7 +441,7 @@ const App = () => {
         </SectionWrapper>
 
         {/* Newsletter Section */}
-        <div className="bg-blue-600 text-white py-16">
+        <div className="bg-blue-600 text-black dark:text-white py-16">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -494,7 +493,7 @@ const App = () => {
         </div>
 
         {/* Footer */}
-        <footer className="bg-gray-800 text-white py-12">
+        <footer className="bg-gray-800 text-black dark:text-white py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-4 gap-8">
               <div>
@@ -555,7 +554,6 @@ const App = () => {
           </div>
         </footer>
       </div>
-    //</NotificationProvider>
   );
 };
 
