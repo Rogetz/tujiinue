@@ -5,11 +5,12 @@ import { FaMoon, FaSun, FaArrowRight, FaFacebook, FaTwitter, FaInstagram, FaYout
 import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
 import { useNotification } from './notificationContext';
 import tujiinueMashinani from "./TUJIINUE MASHINANI.jpg"
-import healthEducation from "./health-education.png"
-import happyChild from "./happy-children.png"
-import communityHealth from "./community-outreach.png"
-import menstrualHealth from "./menstrual-health-education.png"
-import youthEmpowerement from "./youth-empowerement.png"
+// changed them to uppercase .PNG for the sake of linux compilation in vercel
+import healthEducation from "./health-education.PNG"
+import happyChild from "./happy-children.PNG"
+import communityHealth from "./community-outreach.PNG"
+import menstrualHealth from "./menstrual-health-education.PNG"
+import youthEmpowerement from "./youth-empowerement.PNG"
 import tujiinueVideo from "./tujiinueVideo.mp4"
 
 const App = () => {
